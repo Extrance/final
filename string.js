@@ -4,10 +4,9 @@ const app = express();
 
 app.get('/square' , (req,res) => {
   var s = req.query.string;
-  var a = {result: string_square(s)};
+  var a = {result: string_square(s)}
   res.json(a)
-  res.end();
-});
+})
 
 function string_square(s) {
   try {
@@ -19,4 +18,4 @@ function string_square(s) {
   }
 }
 
-app.listen(4000 || process.env.PORT, () => console.log('App is online on port 4000'))
+app.listen(3000 || process.env.PORT, () => console.log('App is online on port 4000'))
